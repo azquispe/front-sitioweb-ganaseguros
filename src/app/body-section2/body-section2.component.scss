@@ -1,0 +1,12 @@
+@import '../../variables';
+
+.background-acuagreen{
+  background: $acuagreen;
+}
+
+.background-graph{
+  background-image: url(../../assets/img/ganaSeguros/ganaSeguros_section2.png);
+  background-repeat: no-repeat, repeat;
+  background-size: 50%;
+  background-position: left bottom;
+}

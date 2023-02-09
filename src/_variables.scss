@@ -1,0 +1,38 @@
+//gana seguros fonts
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swa');
+$font-family-poppins: "Poppins";
+$font-family-base: $font-family-poppins;
+
+//gana seguros colors
+$primary: #6FBF31;
+$secondary: #01827D;
+$success: #00521A;
+$info: #333333;
+$acuagreen: #B7DF98;
+$white: #ffffff;
+$backgroundgray: #dddddd;
+
+//modificaciones de texto
+.label-small{
+  font-size:11px;
+}
+
+//para muestra
+//$primary: #6c31bf;
+//$secondary: #bb6117;
+
+.btn-volver:hover img{
+  content: url('assets/img/ganaSeguros/ganaSeguros_arrow_back_black.png');
+}
+
+.btn-next:hover img{
+  content: url('assets/img/ganaSeguros/ganaSeguros_arrow_next_black.png');
+}
+
+.btn-home:hover img{
+  content: url('assets/img/ganaSeguros/ganaSeguros_home_black.png');
+}
+
+.btn-nuevo:hover img{
+  content: url('assets/img/ganaSeguros/ganaSeguros_nuevo_black.png');
+}

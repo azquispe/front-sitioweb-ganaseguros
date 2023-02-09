@@ -1,0 +1,89 @@
+<div class=" p-0 background-acuagreen">
+  <div class="container pt-3">
+    <div class="shadow-sm card m-auto background-graph" style="width: 90%;">
+      <div class="row">
+        <div class="col-12 m-3">
+          <h6 class="text-secondary ps-3" style="font-weight:700;">Cotiza Ahora</h6>
+          <h3 class="text-primary" style="font-weight:700;">Formulario de Contacto</h3>
+          <div class="ps-3 mt-4 col-8">
+            <p style="font-weight:400;">Con esta información un especialista se comunicará contigo</p>
+            <div class="row">
+              <div class="col-6">
+                <label for="ci" class="form-label label-small">Nombre(s)</label>
+                <input type="text" class="form-control" id="nombres" name="nombres" [(ngModel)]="nombres">
+              </div>
+              <div class="col-6">
+                <label for="exp" class="form-label label-small">Apellido(s)</label>
+                <input type="text" class="form-control" id="apellidos" name="apellidos" [(ngModel)]="apellidos">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6">
+                <label for="exp" class="form-label label-small">Teléfono Celular</label>
+                <input type="text" class="form-control" id="telefonoCelular" name="telefonoCelular" [(ngModel)]="telefonoCelular">
+              </div>
+              <div class="col-6">
+                <label for="ci" class="form-label label-small">Correo Electrónico</label>
+                <input type="text" class="form-control" id="correo" name="correo" [(ngModel)]="correo">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6">
+                <label for="exp" class="form-label label-small">Ciudad</label>
+                <select  class="form-select" id="ciudad" name="ciudad" [(ngModel)]="ciudad">
+                  <option value="1016" class="form-control">La Paz</option>
+                  <option value="1018" class="form-control">Oruro</option>
+                  <option value="1019" class="form-control">Potosí</option>
+                  <option value="1017" class="form-control">Cochabamba</option>
+                  <option value="1020" class="form-control">Chuquisaca</option>
+                  <option value="1021" class="form-control">Tarija</option>
+                  <option value="1022" class="form-control">Beni</option>
+                  <option value="1023" class="form-control">Pando</option>
+                  <option value="1024" class="form-control">Santa Cruz</option>
+                </select>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 mt-2">
+                <span class="form-label label-small me-1">¿Tienes algún seguro contratado con nosotros?</span>
+                    <span class="form-label label-small ms-2">Si</span>
+                    <input class="ms-2" value="true" type="radio" name="option1" id="option1" [(ngModel)]="option1">
+                    <span class="form-label label-small ms-2">No</span>
+                    <input class="ms-2" type="radio" name="option3" id="option3">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 mt-2">
+                <span class="form-label label-small me-1">¿Tienes algún seguro contratado con otra compañia?</span>
+                  <span class="form-label label-small ms-2">Si</span>
+                  <input class="ms-2" value="true" type="radio" name="options2" id="option2" [(ngModel)]="option2">
+                  <span class="form-label label-small ms-2">No</span>
+                  <input class="ms-2" type="radio" name="options4" id="option4">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 mt-3">
+                <label for="fecha" class="form-label label-small">¿Qué tipo de seguro te interesa?</label>
+                <!--textarea class="form-control" id="detalle" name="detalle" [(ngModel)]="detalle"></textarea-->
+                <select  class="form-select" id="producto" name="producto" [(ngModel)]="producto">
+                  <option value="1004" class="form-control">Desgravamen</option>
+                  <option value="1006" class="form-control">Sepelio</option>
+                  <option value="1005" class="form-control">Vida Grupo</option>
+                </select>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-8">
+                <button class="btn btn-outline-primary me-2 btn-volver" (click)="onSelect('main')">
+                  <img src="../../assets/img/ganaSeguros/ganaSeguros_arrow_back_green.png" alt="back" class="img-responsive me-1" style="width:10px;">Volver
+                </button>
+                <button type="submit" class="btn btn-secondary mt-3 mb-3" (click)="onSelect('sec5')">Enviar</button>
+              </div>
+            </div>
+            <div class="row" style="height: 100px;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

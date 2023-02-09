@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  baseUrl:"https://front-web-consultapolizas-v2.azurewebsites.net/"
 };

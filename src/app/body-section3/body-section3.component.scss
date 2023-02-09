@@ -1,0 +1,30 @@
+@import '../../variables';
+
+.background-acuagreen{
+  background: $acuagreen;
+}
+
+.background-graph{
+  background-image: url(../../assets/img/ganaSeguros/ganaSeguros_section3.jpg);
+  background-repeat: no-repeat, repeat;
+  background-size: 30%;
+  background-position: left bottom;
+}
+
+.background-gradient{
+  /*background: $primary;
+  background: -moz-linear-gradient(180deg, top, $primary 0%, $white 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$primary), color-stop(100%,$white));
+  background: -webkit-linear-gradient(180deg, top, $primary 0%, $white 100%);
+  background: -o-linear-gradient(180deg, top, $primary 0%, $white 100%);
+  background: -ms-linear-gradient(180deg, top, $primary 0%, $white 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=$primary, endColorstr=$white,GradientType=0 );
+  background: linear-gradient(180deg, top, $primary 0%, $white 100%);*/
+  //background: $primary;
+  //background: linear-gradient(180deg, $primary 0%, $white 100%);
+  background-color: #eeeeee;
+}
+
+.label-small{
+  font-size: 13px;
+}

@@ -1,0 +1,63 @@
+<div class=" p-0 background-acuagreen">
+  <div class="container pt-3">
+    <div class="shadow-sm card m-auto background-graph" style="width: 90%;">
+      <div class="row">
+        <div class="col-12 m-3">
+          <h6 class="text-secondary ps-3" style="font-weight:700;">Consulta Rápida</h6>
+          <h3 class="text-primary" style="font-weight:700;">Mis Productos de Seguros</h3>
+          <div class="ps-3 mt-4 col-6">
+            <p style="font-weight:400;">Acceso para beneficiarios</p>
+            <div class="row">
+              <div class="col-8">
+                <label for="ci" class="form-label label-small">Nro. de documento</label>
+                <input type="text" class="form-control" id="nro" name="nro" (keypress)="numberOnly($event)" [(ngModel)]="nro">
+              </div>
+              <div class="col-2">
+                <label for="exp" class="form-label label-small">Exp.</label>
+                <input type="text" class="form-control" id="exp" name="exp" [(ngModel)]="exp">
+              </div>
+              <div class="col-2">
+                <label for="comp" class="form-label label-small">Comp.</label>
+                <input type="text" class="form-control" id="comp" name="comp" [(ngModel)]="comp">
+              </div>
+            </div>
+            <!--div class="row col-8">
+              <label for="fecha" class="form-label label-small">Tipo de Documento</label>
+              <select class="form-select ms-2" style="width: 97%;" [(ngModel)]="docto">
+                <option selected value="CI">Carnet de Identidad</option>
+                <option value="DE">Documento Extrangero</option>
+                <option value="NIT">NIT</option>
+              </select>
+            </div-->
+            <div class="row">
+              <div class="col-8">
+                <label for="fecha" class="form-label label-small">Fecha de Nacimiento</label>
+                <input type="text" class="form-control" id="fecha" name="fecha" [(ngModel)]="fecha">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-8" (click)="captchaClick()">
+                <img *ngIf="!captchaChecked" src="../../assets/img/ganaSeguros/ganaSeguros_section1capcha.png" class="img-fluid pt-3" alt="baner1">
+                <img *ngIf="captchaChecked" src="../../assets/img/ganaSeguros/ganaSeguros_section1capcha_ok.png" class="img-fluid pt-3" alt="baner1">
+              </div>
+            </div>
+            <div class="row" *ngIf="!gifActive">
+              <div class="col-8">
+                <button class="btn btn-outline-primary me-2 btn-volver" (click)="onSelect('main')">
+                  <img src="../../assets/img/ganaSeguros/ganaSeguros_arrow_back_green.png" alt="back" class="img-responsive me-1" style="width:10px;">Volver
+                </button>
+                <button type="submit" class="btn btn-secondary mt-3 mb-3" (click)="getServiceResponce()">Ingresar</button>
+              </div>
+            </div>
+            <div class="row" *ngIf="gifActive">
+              <div class="col-8 mt-3 ms-1">
+                Buscando... <img src="../../assets/img/ganaSeguros/ganaSeguros_spinner.gif" alt="espere..." style="width: 30px;">
+              </div>
+            </div>
+            <div class="row" style="height: 100px;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

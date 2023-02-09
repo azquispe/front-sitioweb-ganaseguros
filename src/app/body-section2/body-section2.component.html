@@ -1,0 +1,42 @@
+<div class=" p-0 background-acuagreen">
+  <div class="container pt-3">
+    <div class="shadow-sm card m-auto background-graph" style="width: 90%;">
+      <div class="row">
+        <div class="col-12 m-3">
+          <h6 class="text-secondary ps-3" style="font-weight:700;">Consulta Rápida</h6>
+          <h3 class="text-primary" style="font-weight:700;">Mis Productos de Seguros</h3>
+          <div class="row">
+            <div class="ps-4 mt-4 col-5">
+              <span style="font-weight:400;">Bienvenido</span><br/>
+              <span style="font-weight:700;">{{ nombreUsuario }}</span>
+              <p class="mt-3">
+                Usted cuenta con los siguientes  productos de Seguros
+              </p>
+              <button class="btn btn-outline-primary btn-sm me-2 btn-home" (click)="onSelect('main')">
+                <img src="../../assets/img/ganaSeguros/ganaSeguros_home_green.png" alt="home" class="img-responsive me-1" style="width:10px;">Inicio
+              </button>
+              <button class="btn btn-outline-primary btn-sm btn-nuevo"  (click)="onSelect('sec1')">
+                <img src="../../assets/img/ganaSeguros/ganaSeguros_nuevo_green.png" alt="nuevo" class="img-responsive me-1" style="width:10px;">Nueva Búsqueda
+              </button>
+            </div>
+            <div class="col-7 mt-4">
+              <div class="card m-auto bg-primary border-0 p-2 mb-3" style="width: 80%;" *ngFor="let policies of policyItems">
+                <div class="card bg-white border-0" style="width: 50%;">
+                  <span class="label-small m-auto">{{ policies.number }}</span>
+                </div>
+                <span class="label-small text-white" style="font-weight:700;">{{ policies.name }}</span>
+                <span class="label-small text-white" style="font-weight:300;">{{ policies.date }}</span>
+                <div class="position-absolute bottom-0 end-0 me-1 mb-1">
+                  <button class="btn btn-default p-0" (click)="onPolicySelected(policies.target)">
+                    <img src="../../assets/img/ganaSeguros/ganaSeguros_arrow_white.png" width="20" />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row" style="height: 300px;"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
